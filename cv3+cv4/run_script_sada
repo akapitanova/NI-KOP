@@ -1,0 +1,8 @@
+count="$2"
+prob="$3"
+n_files="$4"
+for i in $(seq $count); do
+	for j in $(seq $n_files); do
+    		./gsat -p $prob -r time uf20-91/uf20-0${j}.cnf > /dev/null 2>> "$1"
+	done
+done

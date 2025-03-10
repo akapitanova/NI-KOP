@@ -1,0 +1,6 @@
+count="$2"
+prob="$3"
+file="$4"
+for i in $(seq $count); do
+    	./gsat -p $prob -r time uf20-91/"$file" > /dev/null 2>> "$1"
+done

@@ -1,0 +1,7 @@
+count="$1"
+n_files="$2"
+for i in $(seq $count); do
+	for j in $(seq $n_files); do
+    		./probsat -r time -i 500 uf20-71/uf20-0${j}.cnf > /dev/null 2>> "results_71/uf20-0${j}.csv"
+	done
+done

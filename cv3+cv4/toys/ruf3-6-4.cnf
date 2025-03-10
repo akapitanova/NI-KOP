@@ -1,0 +1,9 @@
+c SAT Generator for power-law distributed variable frequencies
+c -g u -v 3 -c 6 -k 3 -p 2.750000 -b 3.200000 -f ruf3-6-4 -u 1 -U 1 -s 2789343464
+p cnf 3 6
+1 -2 -3 0
+-1 2 3 0
+-1 -2 3 0
+1 2 -3 0
+1 -2 3 0
+-1 -2 -3 0
